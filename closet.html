@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Closet | StyleStack</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf5;
+      color: #222;
+    }
+
+    /* HEADER */
+
+    header {
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #222;
+    }
+
+    .heart {
+      font-size: 28px;
+    }
+
+    /* MAIN PAGE */
+
+    main {
+      padding: 35px 20px 80px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 30px;
+      text-decoration: none;
+      color: #666;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 46px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    /* ADD BUTTON */
+
+    .add-button {
+      display: block;
+      width: 100%;
+      border: none;
+      background: #222;
+      color: white;
+      padding: 18px;
+      border-radius: 15px;
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+
+    /* FILTER BUTTONS */
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+
+    .filter {
+      white-space: nowrap;
+      border: 1px solid #ddd;
+      background: white;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    .filter.active {
+      background: #f3ded8;
+      border-color: #f3ded8;
+      font-weight: bold;
+    }
+
+    /* CLOSET */
+
+    .closet-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .clothing-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .clothing-image {
+      height: 180px;
+      background: #f5f1ed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 65px;
+    }
+
+    .clothing-info {
+      padding: 15px;
+    }
+
+    .clothing-info h3 {
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .clothing-info p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      padding: 40px 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="logo">StyleStack</a>
+  <div class="heart">♡</div>
+</header>
+
+<main>
+
+  <a href="index.html" class="back">← Back home</a>
+
+  <h1>My Closet</h1>
+
+  <p class="subtitle">
+    Everything you own, all in one place.
+  </p>
+
+  <button class="add-button">
+    + Add New Item
+  </button>
+
+  <div class="filters">
+    <button class="filter active">All</button>
+    <button class="filter">Tops</button>
+    <button class="filter">Bottoms</button>
+    <button class="filter">Dresses</button>
+    <button class="filter">Shoes</button>
+    <button class="filter">Outerwear</button>
+    <button class="filter">Accessories</button>
+  </div>
+
+  <div class="closet-grid">
+
+    <div class="clothing-card">
+      <div class="clothing-image">👚</div>
+
+      <div class="clothing-info">
+        <h3>White Tank</h3>
+        <p>Top · White</p>
+      </div>
+    </div>
+
+    <div class="clothing-card">
+      <div class="clothing-image">👖</div>
+
+      <div class="clothing-info">
+        <h3>Blue Jeans</h3>
+        <p>Bottom · Blue</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  StyleStack ♡ Dress smarter.
+</footer>
+
+</body>
+</html>
